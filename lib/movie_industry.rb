@@ -1,10 +1,7 @@
 class MovieIndustry
 
-  def initialize
-    @storage = Graph.new
-  end
-  def inject_storage(engine)
-    #@storage = engine 
+  def initialize(storage)
+    @storage = storage
   end
 
   def produce(movie,actors)
