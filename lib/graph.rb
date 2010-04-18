@@ -15,6 +15,10 @@ class Graph
     @graph.vertices
   end
 
+  def add_singleton(one_thing)
+    @graph.add_vertex(one_thing)
+  end
+
   def distance(one_thing,another_thing)
     bfs_graph = @graph.bfs_search_tree_from(one_thing)
     visitor = RGL::BFSIterator.new(bfs_graph)
