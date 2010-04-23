@@ -18,4 +18,8 @@ class MovieIndustry
     connect(one_actor,group_of_actors)
   end
 
+  def size
+    @storage.size
+  end
+
 end

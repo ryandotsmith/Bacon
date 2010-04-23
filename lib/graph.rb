@@ -15,6 +15,10 @@ class Graph
     @graph.vertices
   end
 
+  def size
+    @graph.size  
+  end
+
   def add_singleton(one_thing)
     @graph.add_vertex(one_thing)
   end
